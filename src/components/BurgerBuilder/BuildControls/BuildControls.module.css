@@ -1,0 +1,6 @@
+.buildControls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-width: fit-content;
+  padding: 10px 0;
+}
