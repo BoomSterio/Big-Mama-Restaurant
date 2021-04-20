@@ -4,10 +4,10 @@ import Burger from './Burger/Burger'
 import BuildControls from './BuildControls/BuildControls'
 import { INGREDIENTS } from '../../data/burgerData'
 
-const getInitialIngredients = available => available.reduce((ig, key) => ({ ...ig, [key.type]: 0}), {})
+const getInitialIngredients = ingredients => ingredients.reduce((ig, key) => ({ ...ig, [key.type]: 0}), {})
 
-const BurgerBuilder = ({ availableIngredients = INGREDIENTS }) => {
-  const [ingredients, setIngredients] = useState(getInitialIngredients(availableIngredients))
+const BurgerBuilder = ({ ingredientsInfo = INGREDIENTS }) => {
+  const [ingredients, setIngredients] = useState(getInitialIngredients(ingredientsInfo))
   const [totalPrice, setTotalPrice] = useState(12)
   const [purchasable, setPurchasable] = useState(false)
 
