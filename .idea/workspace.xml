@@ -10,6 +10,9 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1qyfAABLdQTf20L7j0QhEcfiXeV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,6 +28,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Education\Web\react\projects\burger-shop\src\components\common" />
       <recent name="D:\Education\Web\react\projects\burger-shop\src\components\BurgerBuilder" />
       <recent name="D:\Education\Web\react\projects\burger-shop\src\components" />
     </key>
@@ -38,7 +42,9 @@
       <option name="presentableId" value="Default" />
       <updated>1618056605295</updated>
       <workItem from="1618056606598" duration="7629000" />
-      <workItem from="1618383657122" duration="20293000" />
+      <workItem from="1618383657122" duration="28744000" />
+      <workItem from="1618571499209" duration="2266000" />
+      <workItem from="1618927789429" duration="3268000" />
     </task>
     <servers />
   </component>

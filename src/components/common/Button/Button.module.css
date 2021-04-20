@@ -1,0 +1,59 @@
+.primary, .toCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 16px;
+  padding: 4px;
+  margin: 0 2px;
+  border: none;
+  outline: none;
+  background-color: #fff0e6;
+  color: #d15700;
+  cursor: pointer;
+  transition: .12s ease-in-out;
+}
+
+.toCart {
+  background-color: #d15700;
+  color: #fffaf7;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 20px;
+}
+
+.toCart:hover, .toCart:active {
+  filter: brightness(.95);
+  border: 1px solid #966909;
+}
+
+.toCart:disabled {
+  background-color: #C7C6C6;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: #888888;
+}
+
+.toCart:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+.primary:hover {
+  background-color: #ffd2b3;
+}
+
+.primary:disabled {
+  background-color: lightgray;
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

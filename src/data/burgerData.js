@@ -23,4 +23,16 @@ export const INGREDIENTS = [
     price: 22,
     image: 'https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/092918_burger_inline_370_REV.png'
   },
+  {
+    type: 'jalapeno',
+    label: 'Острый халапеньо 10гр',
+    price: 8,
+    image: 'https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA5E376B4DF'
+  },
+  {
+    type: 'ketchup',
+    label: 'Кетчуп 10гр',
+    price: 3,
+    image: 'https://pngimg.com/uploads/ketchup/ketchup_PNG4.png'
+  },
 ]
