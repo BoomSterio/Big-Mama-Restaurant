@@ -6,9 +6,9 @@ import { INGREDIENTS } from '../../data/burgerData'
 
 const getInitialIngredients = ingredients => ingredients.reduce((ig, key) => ({ ...ig, [key.type]: 0}), {})
 
-const BurgerBuilder = ({ ingredientsInfo = INGREDIENTS }) => {
+const BurgerBuilder = ({ ingredientsInfo = INGREDIENTS, startPrice }) => {
   const [ingredients, setIngredients] = useState(getInitialIngredients(ingredientsInfo))
-  const [totalPrice, setTotalPrice] = useState(12)
+  const [totalPrice, setTotalPrice] = useState(startPrice)
   const [purchasable, setPurchasable] = useState(false)
 
   useEffect(() => {

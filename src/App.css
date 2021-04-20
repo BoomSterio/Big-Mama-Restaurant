@@ -4,6 +4,17 @@ small {
 
 h1, h2, h3, h4, h5 {
   color: #d15700;
+  font-weight: 500;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  padding: 0 8px;
+  max-width: 1500px;
 }
 
 .shadow {

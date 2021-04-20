@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 14px;
+  border-radius: 20px;
   font-size: 16px;
   padding: 4px;
   margin: 0 2px;
@@ -17,14 +17,13 @@
 .toCart {
   background-color: #d15700;
   color: #fffaf7;
-  padding: 10px 12px;
+  padding: 10px 14px;
   margin: 8px 0;
   border-radius: 20px;
 }
 
 .toCart:hover, .toCart:active {
   filter: brightness(.95);
-  border: 1px solid #966909;
 }
 
 .toCart:disabled {

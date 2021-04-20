@@ -4,13 +4,17 @@
   margin: 0 8px;
 }
 
+.list {
+  max-height: 400px;
+  overflow: auto;
+  margin-bottom: 8px;
+}
+
 .ingredients {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-width: fit-content;
   padding: 10px 0;
-  max-height: 400px;
-  overflow: auto;
 }
 
 @media (max-width: 480px) {

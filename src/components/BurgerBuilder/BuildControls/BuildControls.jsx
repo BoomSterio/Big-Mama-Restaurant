@@ -8,18 +8,22 @@ const BuildControls = ({ price, disabledInfo, purchasable, handleAdd, handleRemo
   return (
     <div className={s.buildControls}>
       <h3>Создай свой бургер</h3>
-      <div className={s.ingredients}>
-        {INGREDIENTS.map(c => (
-          <BuildControl
-            key={c.type}
-            {...c}
-            disabled={disabledInfo[c.type]}
-            add={() => handleAdd(c.type)}
-            remove={() => handleRemove(c.type)}
-          />
-        ))}
+      <div className={s.list}>
+        <div className={s.ingredients}>
+          {INGREDIENTS.map(c => (
+            <BuildControl
+              key={c.type}
+              {...c}
+              disabled={disabledInfo[c.type]}
+              add={() => handleAdd(c.type)}
+              remove={() => handleRemove(c.type)}
+            />
+          ))}
+        </div>
       </div>
-      <Button type={'toCart'} disabled={!purchasable}>Добавить в корзину за {price}₴</Button>
+      <Button type={'toCart'} disabled={!purchasable}>
+        Добавить в корзину за {price}₴
+      </Button>
     </div>
   )
 }

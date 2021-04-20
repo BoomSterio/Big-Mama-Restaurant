@@ -30,9 +30,22 @@ export const INGREDIENTS = [
     image: 'https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA5E376B4DF'
   },
   {
+    type: 'onion',
+    label: 'Лук 15гр',
+    price: 6,
+    image: 'http://www.lopezcastro.com/wp-content/uploads/cebolla-aros.png'
+  },
+  {
     type: 'ketchup',
     label: 'Кетчуп 10гр',
     price: 3,
     image: 'https://pngimg.com/uploads/ketchup/ketchup_PNG4.png'
   },
+  {
+    type: 'mustard',
+    label: 'Горчица 5гр',
+    price: 3,
+    image: 'https://images.ua.prom.st/1706395453_gorchitsa.jpg'
+  },
+
 ]

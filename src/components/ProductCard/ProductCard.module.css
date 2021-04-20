@@ -1,0 +1,26 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 455px;
+}
+
+.image {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: all .1s ease-out;
+}
+
+.image:hover {
+  transform: translateY(4px);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
