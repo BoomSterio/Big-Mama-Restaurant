@@ -28,4 +28,4 @@ const BuildControls = ({ price, disabledInfo, purchasable, handleAdd, handleRemo
   )
 }
 
-export default BuildControls
+export default React.memo(BuildControls)

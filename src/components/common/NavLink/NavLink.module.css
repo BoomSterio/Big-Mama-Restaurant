@@ -1,4 +1,4 @@
-.link {
+.link, .activeLink {
   color: black;
   text-decoration: none;
   padding-right: 16px;
@@ -14,4 +14,12 @@
 
 .activeLink {
   color: #d15700;
+}
+
+@media (max-width: 767px) {
+  .link, .activeLink {
+    padding: 8px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
 }

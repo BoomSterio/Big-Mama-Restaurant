@@ -1,0 +1,48 @@
+.slide {
+  transform: scale(0.7);
+  opacity: 0.5;
+  transition: transform .3s;
+}
+
+.slide img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.activeSlide {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.activeSlide img {
+  max-width: 100%;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 4px;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: .2s;
+}
+
+.arrow svg:hover {
+  color: #d3d3d3;
+}
+
+.next {
+  right: 0%;
+  top: 40%;
+}
+
+.prev {
+  left: 0%;
+  top: 40%;
+}

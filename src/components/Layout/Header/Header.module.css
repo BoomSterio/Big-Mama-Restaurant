@@ -58,25 +58,35 @@
   display: flex;
   align-items: center;
   width: 100%;
-  overflow: hidden;
-  margin: 0 0 0 -68px;
-  transition: margin .5s;
 }
 
-.mainCompact.isLogoOpen {
+.left {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-left: -56px;
+  transition: margin .4s;
+}
+
+.left.isLogoOpen {
   margin-left: 0;
 }
 
-.mainCompact img {
+.left img {
   opacity: 0;
+  padding-right: 16px;
   transition: all .5s;
 }
 
-.mainCompact.isLogoOpen img{
+.left.isLogoOpen img{
   opacity: 1;
-  padding-right: 16px;
+}
+
+.mainCompact button {
+  margin-left: auto;
 }
 
 .options {
   display: flex;
 }
+

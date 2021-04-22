@@ -119,3 +119,27 @@
   background: #9d5a8f;
   border-radius: 20px;
 }
+
+.cucumber, .jalapeno {
+  width: 70%;
+  height: 2.5%;
+  margin: 2% auto;
+  background: #548042;
+  border-radius: 5px;
+}
+
+.mushrooms {
+  width: 75%;
+  height: 3%;
+  margin: 2% auto;
+  background: #ba9e88;
+  border-radius: 5px;
+}
+
+.tomatoes {
+  width: 75%;
+  height: 4%;
+  margin: 2% auto;
+  background: #fe3340;
+  border-radius: 5px;
+}

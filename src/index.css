@@ -20,3 +20,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+small {
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #d15700;
+  font-weight: 500;
+}

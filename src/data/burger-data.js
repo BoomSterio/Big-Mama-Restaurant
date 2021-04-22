@@ -20,8 +20,14 @@ export const INGREDIENTS = [
   {
     type: 'meat',
     label: 'Говядина 100гр',
-    price: 22,
+    price: 25,
     image: 'https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/092918_burger_inline_370_REV.png'
+  },
+  {
+    type: 'cucumber',
+    label: 'Соленые огурчики 20гр',
+    price: 10,
+    image: 'https://ru.all.biz/img/ru/catalog/2107839.png'
   },
   {
     type: 'jalapeno',
@@ -36,6 +42,18 @@ export const INGREDIENTS = [
     image: 'http://www.lopezcastro.com/wp-content/uploads/cebolla-aros.png'
   },
   {
+    type: 'mushrooms',
+    label: 'Шампиньоны 20гр',
+    price: 10,
+    image: 'http://www.myasnov.ru/upload/iblock/407/407dc483a3469b6aea4c587656cd50a1.png'
+  },
+  {
+    type: 'tomatoes',
+    label: 'Помидоры 20гр',
+    price: 8,
+    image: 'https://lh3.googleusercontent.com/proxy/j63QaK8RHtBXTsYhC_b_K56bsNmxS2n2U_5hiDHZ44OjTpGKt-EwnVDeXEWDMtWpPTdOSt9Bqz6dz7218P3G9od44Y5qHAItqPuyPOIXuwLy_kCDKt3NR7lhGyJ6'
+  },
+  {
     type: 'ketchup',
     label: 'Кетчуп 10гр',
     price: 3,
@@ -47,5 +65,4 @@ export const INGREDIENTS = [
     price: 3,
     image: 'https://images.ua.prom.st/1706395453_gorchitsa.jpg'
   },
-
 ]
