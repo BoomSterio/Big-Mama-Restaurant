@@ -36,4 +36,4 @@ const ProductCard = ({ type = BASIC, image, label, description, price }) => {
   )
 }
 
-export default ProductCard
+export default React.memo(ProductCard)

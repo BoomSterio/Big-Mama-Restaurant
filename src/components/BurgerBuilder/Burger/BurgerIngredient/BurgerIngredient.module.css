@@ -99,7 +99,7 @@
 
 .salad {
   width: 85%;
-  height: 7%;
+  height: 6%;
   margin: 2% auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 20px;
@@ -110,4 +110,12 @@
   height: 3%;
   background: linear-gradient(#bf3813, #c45e38);
   margin: 2% auto;
+}
+
+.onion {
+  width: 75%;
+  height: 2%;
+  margin: 2% auto;
+  background: #9d5a8f;
+  border-radius: 20px;
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import s from './BurgerBuilder.module.css'
 import Burger from './Burger/Burger'
 import BuildControls from './BuildControls/BuildControls'
-import { INGREDIENTS } from '../../data/burgerData'
+import { INGREDIENTS } from '../../data/burger-data'
 
 const getInitialIngredients = ingredients => ingredients.reduce((ig, key) => ({ ...ig, [key.type]: 0}), {})
 

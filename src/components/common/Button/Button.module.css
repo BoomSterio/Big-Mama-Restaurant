@@ -1,4 +1,4 @@
-.primary, .toCart {
+.primary, .secondary, .toCart {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +12,18 @@
   color: #d15700;
   cursor: pointer;
   transition: .12s ease-in-out;
+}
+
+.secondary {
+  margin-left: auto;
+  background-color: #e5e5e5;
+  color: #5b5b5b;
+  padding: 6px 8px;
+  border-radius: 20px;
+}
+
+.secondary:hover, .secondary:active {
+  filter: contrast(1.1);
 }
 
 .toCart {

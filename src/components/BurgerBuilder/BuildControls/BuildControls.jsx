@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './BuildControls.module.css'
 import BuildControl from './BuildControl/BuildControl'
-import { INGREDIENTS } from '../../../data/burgerData'
+import { INGREDIENTS } from '../../../data/burger-data'
 import Button from '../../common/Button/Button'
 
 const BuildControls = ({ price, disabledInfo, purchasable, handleAdd, handleRemove }) => {

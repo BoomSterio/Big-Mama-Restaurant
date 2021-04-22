@@ -5,7 +5,7 @@ import Header from './Header/Header'
 const Layout = ({ children }) => (
   <>
     <Header/>
-    <main className={s.content}>{children}</main>
+    <main className={s.content + ' content-wrapper'}>{children}</main>
   </>
 )
 

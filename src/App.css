@@ -13,8 +13,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .content-wrapper {
-  padding: 0 8px;
-  max-width: 1500px;
+  max-width: 1300px;
 }
 
 .shadow {
