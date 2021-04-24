@@ -1,13 +1,13 @@
 export const PIZZAS = [
   {
     label: 'Чиззи Пицца',
-    image: 'https://dodopizza-a.akamaihd.net/static/Img/Products/78e732c620334b5e8e5d821685c1c4b5_584x584.jpeg',
+    image: 'https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/ff4b4951-6257-49fe-9c72-f0e272d8a503.jpg',
     price: 190,
     description: 'Бекон, цыпленок, ветчина, сыр блю чиз, сыры чеддер и пармезан, соус песто, кубики брынзы, томаты черри, красный лук, моцарелла, соус альфредо, чеснок, итальянские травы'
   },
   {
     label: 'Чиззи Пицца',
-    image: 'https://dodopizza-a.akamaihd.net/static/Img/Products/78e732c620334b5e8e5d821685c1c4b5_584x584.jpeg',
+    image: 'https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/ff4b4951-6257-49fe-9c72-f0e272d8a503.jpg',
     price: 190,
     description: 'Бекон, цыпленок, ветчина, сыр блю чиз, сыры чеддер и пармезан, соус песто, кубики брынзы, томаты черри, красный лук, моцарелла, соус альфредо, чеснок, итальянские травы'
   },

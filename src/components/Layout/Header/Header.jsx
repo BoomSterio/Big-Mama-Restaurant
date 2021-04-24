@@ -7,10 +7,13 @@ import { Divider, IconButton, useMediaQuery } from '@material-ui/core'
 import { MenuRounded } from '@material-ui/icons'
 import NavItems from './NavItems/NavItems'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
+import Popover from '@material-ui/core/Popover'
+import CompactCart from './CompactCart/CompactCart'
 
 const Header = () => {
   const leftRef = useRef()
-  const [showMenu, setShowMenu] = useState(false)
+  const [showBurger, setShowBurger] = useState(false)
+  const [cartAnchor, setCartAnchor] = useState(null)
   const mediaMd = useMediaQuery('(max-width: 767px)')
 
   window.onscroll = () => handleScroll()
@@ -24,8 +27,12 @@ const Header = () => {
   }
 
   const toggleMenu = () => {
-    setShowMenu(showMenu => !showMenu)
+    setShowBurger(showBurger => !showBurger)
   }
+
+  const handleCartHover = event => setCartAnchor(event.currentTarget)
+
+  const handleCartOut = () => setCartAnchor(null)
 
   return (
     <>
@@ -64,19 +71,21 @@ const Header = () => {
                   <IconButton onClick={toggleMenu}>
                     <MenuRounded />
                   </IconButton>
-                  <SwipeableDrawer anchor={'top'} open={showMenu} onClose={toggleMenu} onOpen={toggleMenu}>
+                  <SwipeableDrawer anchor={'top'} open={showBurger} onClose={toggleMenu} onOpen={toggleMenu}>
                     <NavItems />
                   </SwipeableDrawer>
                 </>
               )}
             </div>
           </div>
-          <Button type={'toCart'} style={{}}>
-            Корзина
-            <Divider
-              style={{ backgroundColor: 'lightgrey', opacity: 0.7, margin: '0 10px' }} orientation={'vertical'} />0
-          </Button>
+          <div style={{ marginLeft: 'auto' }} onMouseOver={handleCartHover}>
+            <Button type={'toCart'}>
+              Корзина
+              <Divider style={{ backgroundColor: 'lightgrey', opacity: 0.7, margin: '0 10px' }} orientation={'vertical'} />0
+            </Button>
+          </div>
         </div>
+        <CompactCart anchorEl={cartAnchor} handleClose={handleCartOut}/>
       </div>
     </>
   )

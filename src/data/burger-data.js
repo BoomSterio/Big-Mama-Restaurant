@@ -1,6 +1,6 @@
 export const INGREDIENTS = [
   {
-    type: 'cheese',
+    type: 'cheddar',
     label: 'Сыр Чеддер 30гр',
     price: 12,
     image: 'https://mirbeer.com.ua/920-large_default/zakvaska-dlya-syra-chedder.jpg'
@@ -51,7 +51,7 @@ export const INGREDIENTS = [
     type: 'tomatoes',
     label: 'Помидоры 20гр',
     price: 8,
-    image: 'https://lh3.googleusercontent.com/proxy/j63QaK8RHtBXTsYhC_b_K56bsNmxS2n2U_5hiDHZ44OjTpGKt-EwnVDeXEWDMtWpPTdOSt9Bqz6dz7218P3G9od44Y5qHAItqPuyPOIXuwLy_kCDKt3NR7lhGyJ6'
+    image: 'https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA7AC1A1D67'
   },
   {
     type: 'ketchup',

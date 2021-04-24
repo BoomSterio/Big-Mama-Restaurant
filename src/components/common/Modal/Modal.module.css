@@ -1,6 +1,7 @@
 .modal {
   position: fixed;
   z-index: 999;
+  max-height: 80vh;
   background-color: white;
   width: 90%;
   border: 1px solid #ccc;
@@ -8,7 +9,8 @@
   box-shadow: 4px 4px 13px 3px rgba(34, 60, 80, 0.25);
   padding: 8px;
   left: 5%;
-  top: 15%;
+  top: 10vh;
+  overflow: auto;
   box-sizing: border-box;
   transition: all .3s ease-out;
 }
@@ -18,5 +20,12 @@
     width: 700px;
     left: calc(50% - 350px);
     padding: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .modal {
+    width: 850px;
+    left: calc(50% - 425px);
   }
 }

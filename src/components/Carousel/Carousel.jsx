@@ -3,19 +3,19 @@ import Slider from 'react-slick'
 import s from './Carousel.module.css'
 import { ArrowBackIosRounded, ArrowForwardIosRounded } from '@material-ui/icons'
 
-const NextArrow = ({onClick}) => (
+const NextArrow = ({ onClick }) => (
   <div className={`${s.arrow} ${s.next}`} onClick={onClick}>
-    <ArrowForwardIosRounded/>
+    <ArrowForwardIosRounded />
   </div>
 )
 
-const PrevArrow = ({onClick}) => (
+const PrevArrow = ({ onClick }) => (
   <div className={`${s.arrow} ${s.prev}`} onClick={onClick}>
-    <ArrowBackIosRounded/>
+    <ArrowBackIosRounded />
   </div>
 )
 
-const Carousel = ({images}) => {
+const Carousel = ({ images }) => {
   const [imageIndex, setImageIndex] = useState(0)
 
   const settings = {
@@ -27,20 +27,34 @@ const Carousel = ({images}) => {
     centerPadding: 0,
     autoplay: true,
     autoplaySpeed: 5000,
-    nextArrow: <NextArrow/>,
-    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     focusOnSelect: true,
     adaptiveHeight: true,
-    beforeChange: (current, next) => setImageIndex(next)
+    beforeChange: (current, next) => setImageIndex(next),
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          dots: true,
+          fade: true,
+        },
+      },
+    ],
   }
 
   return (
-    <Slider {...settings}>
-      {images.map((img, i) =>
-        <div className={s.slide + ' ' + (i === imageIndex && s.activeSlide)} key={img}>
-          <img src={img} alt={'img'}/>
-        </div>)}
-    </Slider>
+    <div className={s.slider}>
+      <Slider {...settings}>
+        {images.map((img, i) => (
+          <div className={s.slide + ' ' + (i === imageIndex && s.activeSlide)} key={img}>
+            <img src={img} alt={'img'} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   )
 }
 

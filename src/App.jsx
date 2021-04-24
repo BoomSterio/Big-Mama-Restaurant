@@ -9,7 +9,7 @@ function App() {
     <div className={'app'}>
       <Layout>
         <Router>
-          <Menu path={'/'}/>
+          <Menu exact path={'/'}/>
         </Router>
       </Layout>
     </div>

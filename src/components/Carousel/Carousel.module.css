@@ -1,3 +1,8 @@
+.slider {
+  max-width: 98%;
+  margin: 18px auto;
+}
+
 .slide {
   transform: scale(0.7);
   opacity: 0.5;
@@ -12,10 +17,6 @@
 .activeSlide {
   transform: scale(1.2);
   opacity: 1;
-}
-
-.activeSlide img {
-  max-width: 100%;
 }
 
 .arrow {
@@ -45,4 +46,32 @@
 .prev {
   left: 0%;
   top: 40%;
+}
+
+@media (max-width: 1500px) {
+  .activeSlide {
+    transform: scale(1);
+  }
+  .activeSlide img {
+    max-width: 1000px;
+  }
+  .slider {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .slider {
+    width: 767px;
+    margin: 0 auto;
+  }
+  .activeSlide img {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    display: none;
+  }
 }

@@ -7,7 +7,7 @@ const NavItems = () => {
   return (
     <>
       {/*since reach router cant navigate to anchor, I will do it by myself :\ */}
-      <NavLink to={'/#pizzas'} onClick={() => handleAnchor('pizzas')}>
+      <NavLink to={'#pizzas'} onClick={() => handleAnchor('pizzas')}>
         Пицца
       </NavLink>
       <NavLink to={'#burgers'} onClick={() => handleAnchor('burgers')}>

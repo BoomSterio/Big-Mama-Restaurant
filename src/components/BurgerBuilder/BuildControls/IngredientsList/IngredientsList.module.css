@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px;
+  max-width: fit-content;
+}
+
+.list div {
+  margin: 2px;
+}

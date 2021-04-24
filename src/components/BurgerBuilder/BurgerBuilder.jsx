@@ -50,6 +50,7 @@ const BurgerBuilder = ({ ingredientsInfo = INGREDIENTS, startPrice }) => {
     <div className={s.burgerBuilder}>
       <Burger ingredients={ingredients} />
       <BuildControls
+        ingredients={ingredients}
         price={totalPrice}
         disabledInfo={disabledInfo}
         purchasable={purchasable}

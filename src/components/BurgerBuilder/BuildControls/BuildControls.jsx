@@ -3,11 +3,13 @@ import s from './BuildControls.module.css'
 import BuildControl from './BuildControl/BuildControl'
 import { INGREDIENTS } from '../../../data/burger-data'
 import Button from '../../common/Button/Button'
+import IngredientsList from './IngredientsList/IngredientsList'
 
-const BuildControls = ({ price, disabledInfo, purchasable, handleAdd, handleRemove }) => {
+const BuildControls = ({ ingredients, price, disabledInfo, purchasable, handleAdd, handleRemove }) => {
   return (
     <div className={s.buildControls}>
       <h3>Создай свой бургер</h3>
+      <IngredientsList ingredients={ingredients}/>
       <div className={s.list}>
         <div className={s.ingredients}>
           {INGREDIENTS.map(c => (
